@@ -77,7 +77,7 @@ class PointDiagnostic(Diagnostic):
         Output type.
     get_value : function, None
         Function to get value given the field.
-    field : None
+    field : str, None
         Field as dictated by resource.
     output_function : function, None
         Function for assigned output method: standard output or csv.
