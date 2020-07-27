@@ -185,7 +185,7 @@ class FieldDiagnostic(Diagnostic):
     last_dump : SimulationClock, None
         Time of last diagnostic run.
     diagnose : method
-        Run do_diagnostic method.
+        Run `do_diagnostic` or `check_step` method depending on configuration parameters.
     diagnostic_size : (int, int), None
         Size of data set to be written to CSV file. First value is the number of
        time points. Second value is number of spatial points.
