@@ -144,7 +144,7 @@ class PointDiagnostic(Diagnostic):
 
     def csv_diagnose(self, data):
         """
-        Adds 'data' onto csv file.
+        Adds 'data' into csv output buffer.
 
         Parameters
         ----------
@@ -375,4 +375,3 @@ Diagnostic.register("point", PointDiagnostic)
 Diagnostic.register("field", FieldDiagnostic)
 Diagnostic.register("grid", GridDiagnostic)
 Diagnostic.register("clock", ClockDiagnostic)
-
