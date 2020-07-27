@@ -274,7 +274,7 @@ class FieldDiagnostic(Diagnostic):
 
     def csv_diagnose(self, data):
         """
-        Adds 'data' onto csv file.
+        Adds 'data' into csv output buffer.
 
         Parameters
         ----------
