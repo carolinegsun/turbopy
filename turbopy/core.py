@@ -315,6 +315,10 @@ class PhysicsModule(DynamicFactory):
         Simulation class that PhysicsModule belongs to.
     input_data : dict
        Input data.
+    _registery : dict
+        Registered derived ComputeTool classes.
+    _factory_type_name : str
+        Type of PhysicsModule child class
 
     Attributes
     ----------
