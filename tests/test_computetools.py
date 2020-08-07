@@ -276,7 +276,6 @@ def test_BC_left_flat(fin_diff):
     for actual, expected in zip(d.data, [diag, above]):
         assert np.allclose(actual, expected)
 
-
 def test_BC_right_extrap(fin_diff):
     """Tests for turbopy.computetools.FiniteDifference's BC_right_extrap method."""
     N = fin_diff.owner.grid.num_points
@@ -291,7 +290,7 @@ def test_BC_right_extrap(fin_diff):
         assert np.allclose(actual, expected)
 
         
-   def test_init_poisson():
+def test_init_poisson():
     """Method that creates a PoissonSolver1DRadial object to test __init__"""
     input_data = {
         "Clock": {"start_time": 0, "end_time": 100, "dt": 1e-9},
